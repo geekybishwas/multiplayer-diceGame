@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.7%;
+}
+
+body {
+    font-family: sans-serif;
+    /* position: relative; */
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient( to bottom, rgb(225, 49, 49), rgb(195, 97, 27), rgb(90, 192, 34));
+    position: relative;
+}
+
+main * {
+    z-index: 12;
+}
+
+#container {
+    height: 70%;
+    max-width: 1200px;
+    width: 68%;
+    border: 1px solid black;
+    position: absolute;
+    top: 12%;
+    left: 16%;
+    box-shadow: 2px 2px 24px 1px #333;
+    border: none;
+}
+
+.box0 {
+    border-radius: 0.8rem;
+    /* background: rgb(242, 185, 185); */
+    float: left;
+    width: 50%;
+    height: 100%;
+    border: none;
+    /* border-right: 1px solid black; */
+}
+
+.player--active {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#container .box1 {
+    /* background: rgb(242, 185, 185); */
+    float: right;
+    width: 50%;
+    height: 100%;
+    border: none;
+    border-radius: 0.8rem;
+    opacity: 0.9;
+}
+
+.btn {
+    letter-spacing: 0.4rem;
+    word-spacing: 2px;
+    padding: 0.8rem 5rem;
+    text-align: center;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 5px 5px 18px #333;
+}
+
+.new-game {
+    position: absolute;
+    top: 6%;
+    left: 41%;
+}
+
+.roll-dice {
+    position: absolute;
+    top: 78%;
+    left: 41%;
+}
+
+.hold {
+    position: absolute;
+    top: 90%;
+    left: 42.7%;
+}
+
+.box0,
+.box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player {
+    letter-spacing: 2px;
+    font-weight: lighter;
+    font-size: 4rem;
+    color: rgb(146, 39, 39);
+    position: absolute;
+    top: 20%;
+    /* box-shadow: 5px 5px 12px #333; */
+    border: none;
+    cursor: pointer;
+}
+
+.score {
+    color: rgb(127, 49, 13);
+    position: absolute;
+    font-size: 7rem;
+    top: 32%;
+    font-weight: lighter;
+}
+
+.current {
+    text-align: center;
+    border-radius: 10px;
+    min-height: 16%;
+    min-width: 14%;
+    background-color: rgb(225, 61, 132);
+    position: absolute;
+    top: 70%;
+    font-size: 2rem;
+    box-sizing: border-box;
+    padding-top: 1rem;
+    box-shadow: 5px 5px 12px #333;
+    letter-spacing: 0.3rem;
+}
+
+
+/* .current .number {
+    padding-top: -12%;
+    font-size: 4rem;
+} */
+
+.current .ply0currentscore,
+.current .ply1currentscore {
+    padding: 0.7rem;
+    font-size: 3rem;
+}
+
+.dice-img {
+    position: absolute;
+    top: 20%;
+    transform: translate(-4.2rem, 12rem);
+    width: 8rem;
+    height: 8rem;
+}
+
+.player--winner {
+    background: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+.winner-player-shadow {
+    box-shadow: 3px 3px 18px #fff;
+    border: none;
+    border-radius: 1rem;
+}
